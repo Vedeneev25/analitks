@@ -29,6 +29,7 @@ def send0(event):
 def send():
     lima=argumentEntry.get()
     date_year = yearEntry.get()
+    print(date_year)
     start_date_mon = startMonEntry.get() 
     finish_date_mon = stopMonEntry.get()
     cursor.execute( que.query1(lima, date_year, start_date_mon, finish_date_mon))
@@ -45,11 +46,6 @@ def rounq():
     date_year = yearEntry.get()
     start_date_mon = startMonEntry.get() 
     finish_date_mon = stopMonEntry.get()
-
-
-
-
-
 
 
 window = tk.Tk()
@@ -87,13 +83,7 @@ stopMonEntry = tk.Entry(master = params, width=50)
 stopMon.grid(row=5, column=0)
 stopMonEntry.grid(row=5,column=1)
 
-
-
-
-
-
-
-
+#Кнопки
 buttonFrame = tk.Frame(relief=tk.SUNKEN, master=window)
 buttonFrame.pack()
 
